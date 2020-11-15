@@ -1,4 +1,5 @@
 import React from 'react';
+import { faTimesCircle } from '@fortawesome/free-regular-svg-icons'
 
 import { CATEGORIES } from '../../config';
 import {
@@ -24,7 +25,7 @@ const ListItem = ({ type, data: { categoryId, name, amount, id }, onItemRemove }
                 </div>
                 <StyledAmount type={type}>{sign}{amount.toFixed(2)}</StyledAmount>
             </StyledTile>
-            <StyledRemoveButton onClick={() => onItemRemove(type, id)} />
+            <StyledRemoveButton icon={faTimesCircle} size="lg" color="#999" onClick={() => onItemRemove(type, id)} />
         </StyledListWrapper>
     );
 };

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { ErrorMessage, Field } from 'formik';
-import { MinusCircle } from 'styled-icons/heroicons-outline/';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // common
 export const red = '#c1392b';
@@ -132,10 +131,7 @@ export const StyledAmount = styled.div`
     margin-left: 10px;
 `;
 
-export const StyledRemoveButton = styled(MinusCircle)`
-    width: 24px;
-    height: 24px;
-    color: #999;
+export const StyledRemoveButton = styled(FontAwesomeIcon)`
     margin-left: 15px;
     cursor: pointer;
 `;
